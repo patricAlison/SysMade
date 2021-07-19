@@ -1,0 +1,201 @@
+/*cabecario*/
+
+/* 
+    @keyframes é uma regra do css para
+    fazer animações. 0% representa o inicio da 
+    animação enquanto o 100% o fim dela.
+    Depois de colocar o @keyframes você deve colocar
+    o nome da animação.
+*/
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        margin-left: 500px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@-moz-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        margin-left: 500px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@-o-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        margin-left: 500px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        margin-left: 500px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animationFadeLeft {
+    -webkit-animation-name: fadeInLeft;
+    /*nome da animação que você criou*/
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 4s;
+    /*tempo de duração da animação*/
+    -moz-animation-duration: 4s;
+    -o-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-delay: 0.5S;
+    /*atrasa 1 segundo animação*/
+    -moz-animation-delay: 0.5S;
+    -o-animation-delay: 0.5S;
+    animation-delay: 0.5S;
+    /*animation-iteration-count: 3; quantas vezes animação é executada*/
+    /*animation-direction: reverse; propriedade especificada se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados. */
+    animation-timing-function: ease;
+    /*propriedade especificada se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados.*/
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+
+}
+
+.animationFadeLeftNoDelay {
+    animation-name: fadeInLeft;
+    /*nome da animação que você criou*/
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-duration: 2.5s;
+    /*tempo de duração da animação*/
+    -moz-animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s;
+    animation-delay: 0s;
+    /*atrasa 1 segundo animação*/
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    /*animation-iteration-count: 3; quantas vezes animação é executada*/
+    /*animation-direction: reverse; propriedade especificada se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados. */
+    animation-timing-function: ease;
+    /*propriedade especificada se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados.*/
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+
+}
+
+.animationFade {
+    animation-name: fadeIn;
+    /*nome da animação que você criou*/
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-duration: 4s;
+    /*tempo de duração da animação*/
+    -moz-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-delay: 0.5S;
+    -webki-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    /*atrasa 1 segundo animação*/
+    /*animation-iteration-count: 3; quantas vezes animação é executada*/
+    /*animation-direction: reverse; propriedade especificada se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados. */
+    animation-timing-function: ease;
+    /*propriedade especificada se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados.*/
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+}
+
+.animationFadeNoDelay {
+    animation-name: fadeIn;
+    /*nome da animação que você criou*/
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s;
+    /*tempo de duração da animação*/
+    animation-delay: 0S;
+    -webki-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    /*atrasa 1 segundo animação*/
+    /*animation-iteration-count: 3; quantas vezes animação é executada*/
+    /*animation-direction: reverse; propriedade especificada se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados. */
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    /*propriedade especificada se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados.*/
+
+}
+
+/*fim*/

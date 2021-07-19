@@ -1,0 +1,206 @@
+<html>
+
+<head>
+    <title>SAC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="styleSheet" href="../Css/responsive.css">
+    <link rel="styleSheet" href="../Css/animationLesson.css">
+    <script type="text/javascript" src="../Js/languagem.js"></script>
+</head>
+
+<body>
+    <!-- cabecario  -->
+    <header class="cabecario conteiner">
+
+        <div class="logo"></div>
+
+
+        <nav class="menu-navegacao dropMenu">
+            <button class="dropBotao" type="button">Menu</button>
+            <ul class="itens-menuNavegacao">
+                <a href="../index.html">
+                    <li class="botaoNavResposivo menuEnglish">Home</li>
+                </a>
+                <a href="../Pages/portfolio.html">
+                    <li class="botaoNavResposivo menuEnglish">Portfolio/Equipe</li>
+                </a>
+
+                <a href="../Pages/SAC.html">
+                    <li class="botaoNavResposivo menuEnglish">SAC</li>
+                </a>
+
+                <a href="../Pages/sustentabilidade.html">
+                    <li class="botaoNavResposivo menuEnglish">Sustentabilidade</li>
+                </a>
+
+                <a href="../Pages/empresa.html">
+                    <li class="botaoNavResposivo menuEnglish">Sobre</li>
+                </a>
+
+            </ul>
+
+        </nav>
+
+        <div class="languagem" onclick="trocaDeIdioma(3);"></div>
+
+
+    </header>
+    <!-- cabecarioFim  -->
+
+    <!-- Navegacao SAC-->
+    <nav class="conteiner navegacaoPortfolio animationFadeNoDelay">
+        <div class="centro">
+            <button class="botoes btnForm textoEnglish" type="button" onclick="trocaConteudo(2,1)">Formulario</button>
+            <button class="botoes btnDuvida textoEnglish" type="button" onclick="trocaConteudo(2,2)">Duvidas</button>
+        </div>
+    </nav>
+    <!--  fim -->
+
+    <!--  SAC Formulario  -->
+    <section class="conteiner contatoFormulario animationFadeNoDelay">
+
+        <h2 class="titulo01 tituloEnglish">Formulario SAC</h2>
+
+        <div class="sacFormulario">
+
+            <form class="#" method="post" action="#">
+
+                <fieldset class="formulario">
+                    <label class="textoEnglish">Nome:</label>
+                    <br>
+                    <input type="text" name="nome" id="nomeSac">
+
+                    <br><br>
+
+                    <label>Email:</label>
+                    <br>
+                    <input type="email" name="email" id="emailSac">
+
+                    <br><br>
+
+                    <label class="textoEnglish">Sua Duvida ou Opinião:</label>
+
+                    <br>
+
+                    <textarea id="textoSac"></textarea>
+
+                    <br><br>
+
+                    <center>
+                        <button class="textoEnglish" type="button" onclick="sacFormulario();">Enviar</button>
+                    </center>
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </section>
+    <!-- fim -->
+
+    <section class="conteiner duvidasFrequentes animationFadeNoDelay">
+
+        <h2 class="titulo01 tituloEnglish">Duvidas Frequentes</h2>
+
+        <article class="duvidasConteiner">
+
+            <h3 class="accordion tituloEnglish" onclick="accordion(0);">Quais formas de contato?</h3>
+            <div class="panelConteudo">
+                <p>Whatsapp:(11)9969-6565<br>Telefone: +55 (11)2790-9893<br>Email: systemmadeoficial@gmail.com</p>
+            </div>
+
+            <h3 class="accordion tituloEnglish" onclick="accordion(1);">Caso eu não consiga entrar em contato, o que fazer?</h3>
+            <div class="panelConteudo">
+                <p>Envie um email para o nosso SAC, sac.sysmade@gmail.com</p>
+            </div>
+
+            <h3 class="accordion tituloEnglish" onclick="accordion(2);">Qual a forma de pagamento?</h3>
+            <div class="panelConteudo">
+                <p>Crédito ou Débito</p>
+            </div>
+
+            <h3 class="accordion tituloEnglish" onclick="accordion(3);">É possivel parcelar?</h3>
+            <div class="panelConteudo">
+                <p>Sim! parcelamos até 12x sem juros.</p>
+            </div>
+
+        </article>
+
+    </section>
+
+    <!-- rodape -->
+    <footer class="conteiner rodape">
+
+        <!-- logo empresa -->
+        <div class="logoFooter">
+            <img src="../Img/logo/LogotipoNew.png" alt="empresa_logo_transparente">
+        </div>
+        <!-- fim -->
+
+        <!-- membros da equipe -->
+        <div class="membros">
+            <center>
+                <span class="#">&copy;Equipe SysMade:</span>
+
+                <ul class="membrosLista">
+                    <li>Patric</li>
+                    <li>Igor</li>
+                    <li>Amanda</li>
+                    <li>Giovana</li>
+                    <li>Izaias</li>
+                    <li>Henry</li>
+                    <li>Samuel</li>
+                </ul>
+            </center>
+        </div>
+        <!-- fim -->
+    </footer>
+
+    <!-- version do sistema -->
+    <div class="versao">
+        <p><b>BETA</b>V0.1.110</p>
+    </div>
+    <!-- fim -->
+
+    <!-- Modal certo-->
+    <div id="#" class="modalFundo myModal">
+
+        <!-- Modal content -->
+        <div class="modalConteudo">
+            <span class="close">&times;</span>
+            <br><br>
+            <div class="centerModal certo">
+                <div class="correct"></div>
+                <p class="texto textoAlerta">Obrigado Pelo Feedback!!!<br>✌(>‿◠)✌ ✌(>‿◠)✌</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!--  fim  -->
+
+    <!-- Modal aviso 
+    <div id="#" class="modalFundo myModal alertForm">
+
+        <!-- Modal content 
+        <div class="modalConteudo">
+            <span class="close">&times;</span>
+            <br><br>
+            <div class="centerModal alerta">
+                <div class="alerta"></div>
+                <p class="texto textoAlerta">Escreve Email Do Formato @gmail ou @outlook!!!</p>
+            </div>
+                    
+        </div>
+
+    </div>
+    <!--  fim  -->
+
+    <script type="text/javascript" src="../Js/funcoes.js"></script>
+    <!-- fim -->
+</body>
+
+</html>

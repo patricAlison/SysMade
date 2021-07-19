@@ -1,0 +1,889 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+.teste {
+    border: 1px solid #000;
+}
+
+/*tag name genericos*/
+body {
+    background-color: #b4b4b4;
+}
+
+section {
+    background-color: #f6f6f6;
+    color: #31313b;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*fim*/
+
+/*conteiner*/
+.conteiner {
+    width: 100%;
+    display: inline-block;
+}
+
+/*fim*/
+
+/*cabeçario*/
+
+.cabecario {
+    background-color: #f6f6f6;
+    border-bottom: 6px solid #bebcbc;
+}
+
+.cabecario .logo {
+    width: 20%;
+    height: 20%;
+    max-height: 180px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 0.2%;
+    float: left;
+    background-image: url(../Img/logo/LogotipoNew.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cabecario .menu-navegacao {
+    width: 79.6%;
+    height: 100%;
+    max-height: 180px;
+    float: left;
+}
+
+.cabecario .menu-navegacao .dropBotao {
+    display: none;
+}
+
+.cabecario .itens-menuNavegacao {
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: auto;
+    width: 65%;
+}
+
+.cabecario .menu-navegacao .itens-menuNavegacao li {
+    display: inline-block;
+    border: 2px solid #31313b;
+    color: #31313b;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0 auto;
+    max-width: 100px;
+    max-height: 30px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.cabecario .menu-navegacao .itens-menuNavegacao li:hover {
+    color: white;
+    background-color: #31313b;
+    /*    border: 4px solid #fff;*/
+    cursor: pointer;
+}
+
+/*lenguagem*/
+.cabecario .languagem{
+    height: 40px;
+    width: 55px;
+    border-radius: 2px;
+    position: relative;
+    top: 130px;
+    left: 93.5%;
+    background-image: url(../Img/alterandoALinguagem.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px #000;
+}
+.cabecario .languagem:hover{
+    opacity: 0.5;
+}
+/* fim */
+
+
+/*informações e serviços*/
+/*
+.geral {
+    margin-left: 14px;
+    width: 98%;
+    box-shadow: -1px 1px 4px #31313b;
+}
+*/
+
+.informacao {
+    width: 25%;
+    margin: 0.8% 2%;
+    padding: 1%;
+    display: inline-block;
+    border-radius: 2px;
+    text-align: justify;
+    text-justify: initial;
+    border: 1px solid gray;
+}
+
+.ajustInfo{
+    padding-top: 5.4%;
+}
+
+.ajustPreco{
+    padding-top: 4.8%; 
+}
+
+.informacao h4 {
+    text-align: center;
+    margin: 2% 0;
+}
+
+.icone {
+    border: 1px solid #b4b4b4;
+    border-radius: 40%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    height: 100px;
+    width: 100px;
+    background-image: url(../Icones/approve-invoice.png);
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*paralax*/
+.parallax{
+    background-image: url(../Img/default/visao.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 320px;
+    max-height: 500px;
+    height: 100%;
+}
+/*fim*/
+
+/*Modal*/
+
+/*plano defundo*/
+.modalFundo{
+    display: none; /* esconde por padrão */
+    position: fixed; /* ficar no lugar */
+    z-index: 1; /* fica no topo */
+    left: 0;
+    top: 0;
+    width: 100%; /* largura cheia */
+    height: 100%; /* altura cheia */
+    overflow: auto; /* habilitar o scroll se necessario */
+    background-color: rgb(0,0,0); /* fundo de tras color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/*modalConteudo*/
+.modalConteudo{
+   background-color: #fefefe;
+   margin: 15% auto; /* 15% de top e centralizar */
+   padding: 20px;
+   border: 1px solid #888;
+   border-radius: 4px;
+   width: 80%; /* pode ser mais ou menos depende do screen size */
+}
+
+/*fim*/
+
+.myModal .modalConteudo .centerModal{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.8%;
+    text-align: center;
+    background-color: #ffcc5c;
+    border-radius: 4px; 
+} 
+
+/*modal alerta*/
+.myModal .modalConteudo .texto{
+    border: none;
+    border-radius: 4px; 
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.8%;
+}
+.textoAlerta{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+/*    background-color: #ffcc5c;*/
+    color: #fff;
+}
+.myModal .modalConteudo .alerta{
+    background-image: url("../Icones/alert.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.myModal .modalConteudo .correct{
+    background-image: url("../Icones/checked.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.certo{
+    background-color: darkgreen !important;
+}
+/*fim*/
+
+/* Close botão*/
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* fim */
+
+
+/*tabela de preço*/
+.tabelaDePreco{
+    width:100%;
+    text-align: center;
+    font-size: 110%;
+    border-radius: 2px;
+    border: none;
+}
+
+.tabelaDePreco .tituloPreco{
+    width: 30%;
+    height: 50px;
+    padding: 2.2% 0 0 0;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+    border-radius: 2px;
+    
+}
+.tabelaDePreco .precos{
+    width: 30%;
+    height: 40px;
+    padding: 2.2% 0 2.2% 0;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.tabelaDePreco .desconto{
+    width: 30%;
+    height: 40px;
+    display: inline-block;
+    padding: 2.2% 0 2.2% 0;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+    border-radius: 2px;
+}
+/*fim*/
+
+
+
+/*localização da empresa*/
+.localidadeIframe {
+    width: 48%;
+    margin-left: 1.2%;
+    margin-bottom: 1.2%;
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid #a2a1a1;
+}
+
+.localidadeIframe iframe {
+    width: 100%;
+}
+
+.contato {
+    display: inline-block;
+    float: right;
+    margin-right: 1.2%;
+    margin-bottom: 1.2%;
+    border: 1px solid #a2a1a1;
+/*    background-color: #a2a1a1;*/
+    color: #31313b;;
+/*    text-shadow: 1px 1px 2px #000;*/
+    max-height: 300px;
+    height: 100%;
+    width: 48%;
+    border-radius: 2px;
+    align-items: center;
+}
+
+.contato .fundoContato{
+    margin: 1.8% auto;
+    width: 90%;
+/*
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 100%;
+*/
+}
+
+.contato h5 {
+    margin: 2% 4%;
+    font-size: 1.2em;
+    display: inline-block;
+}
+.contato .testeSpan{
+    float: left;
+    overflow: auto;
+}
+.contato .iconeContato{
+    overflow: auto;
+    height: 20px;
+    width: 20px; 
+    display: inline-block;
+    float: left;
+    border: none;
+    background-image: url(../Icones/email.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*fim*/
+
+/*Navegacao Portfolio*/
+.navegacaoPortfolio {
+    background-color: #f6f6f6;
+    margin: 0.8% 0;
+}
+
+.navegacaoPortfolio .botoes {
+    height: 40px;
+    width: 110px;
+    font-size: 1.1em;
+    margin: 0.8% 0.4%;
+    border-radius: 2px;
+    font-weight: bold;
+    border: 1px solid #31313b;
+    background-color: white;
+    color: #31313b;
+}
+
+.navegacaoPortfolio .botoes:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #31313b;
+
+}
+
+/*fim*/
+
+/*flyer*/
+.artFlyer{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.artFlyer img{
+    width: 100%;
+    height: 100%;
+    max-height: 750px;
+    max-width: 900px;
+}
+/*fim*/
+
+/*Sites Feitos*/
+.ajust {
+    padding: 2% 4%;
+    margin: 2% 0;
+}
+.siteFeito {
+    width: 30%;
+    display: inline-block;
+    margin: 0 0.5%;
+    border-radius: 2px;
+    background-color: #e3e3e3;
+    color: black;
+    box-shadow: 1px 2px 4px #000;
+    /*    border: 1px solid #0d4463;*/
+}
+
+.siteFeito p {
+    text-align: justify;
+    text-justify: initial;
+    margin: 4% 0;
+    padding: 4% 4%;
+    color: #31313b;
+    background-color: #faf5f5;
+}
+
+.siteFeito h3 {
+    text-align: center;
+    margin: 4% 0;
+    color: #31313b;
+    background-color: #faf5f5;
+}
+
+.exemploWork {
+    width: 100%;
+    margin: 4% 0;
+}
+
+.exemploWork .fotoSite {
+    width: 100%;
+    height: 300px;
+}
+
+.exemploWork figcaption {
+    text-align: center;
+    margin: 4% 0;
+    font-weight: bold;
+}
+
+/*fim*/
+
+/* equipe */
+.equipeDev {
+    display: none;
+}
+
+/*efeito do titulo*/
+/*.titulo {
+    width: 500px;
+    margin: 1.5% 0.5%;
+    background-color: #504d4d;
+    color: white;
+    text-shadow: 1px 1px #000;
+    box-shadow: 2px 2px 4px #a2a1a1;
+    padding: 0.4%;
+    font-size: 1.4em;
+    position: relative;
+    left: -18px;
+}
+
+.titulo::before {
+    border: 5px solid #504d4d;
+    content: "";
+    border-color: transparent #504d4d #504d4d transparent;
+    border-style: solid;
+    border-width: 5px;
+    left: 0;
+    position: absolute;
+    left: 0px;
+    top: -10px;
+}*/
+.titulo01{
+    max-width: 500px;
+    min-width: 220px;
+    width: 100%;
+    margin: 0.8% 0.4%;
+    padding: 0.4% 0.2%;
+    border-radius: 2px;
+    background-color: #504d4d;
+    box-shadow: 2px 2px 2px #a2a1a1;
+    color: white;
+    text-shadow: 1px 1px #000;
+}
+/*fim*/
+
+.equipeFuncionario {
+    width: 30%;
+    margin: 1.8% 0.8%;
+    padding: 0.2%;
+    display: inline-block;
+    border-radius: 2px;
+    border-top: 4px solid #b4b4b4;
+    border-bottom: 4px solid #b4b4b4;
+/*    box-shadow: 1px 1px 4px #000;*/
+}
+
+.equipeFuncionario .fotoDoFuncionario {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    margin: 1.0% auto;
+    border-radius: 50%;
+    background-image: url(../Img/default/defualt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.equipeFuncionario .fotoDoFuncionario img {
+    min-width: 320px;
+    width: 40%;
+    display: none;
+}
+
+.equipeFuncionario .nomeFuncionario{
+    width: 90%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1.2% auto;
+    padding: 1.0%;
+    background-color: #504d4d;
+    border-radius: 2px;
+    color: rgb(255,255,255)
+    
+}
+.equipeFuncionario p{
+    margin: 1.5%;
+    padding: 1.0%;
+    text-align: justify;
+/*    background-color: #b4b4b4;*/
+}
+
+/*fim*/
+
+/* sobre Empresa */
+.empresa .infoEmpresa {
+    width: 90%;
+    margin-top: 1.5%;
+    margin-right: auto;
+    margin-bottom: 1.5%;
+    margin-left: auto;
+    border-radius: 2px;
+    background-color: #31313b;
+
+}
+
+.infoEmpresa .subTitulo{
+    border: none;
+    text-align: center;
+    background-color: #fff;
+    color: #31313b;
+    padding: 1.5%;
+}
+
+.infoEmpresa .figuraEmpresa {
+    width: 100%;
+    margin: 1.5% 0;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.infoEmpresa .figuraEmpresa img {
+    max-height: 550px;
+    min-height: 325px;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+
+}
+
+.infoEmpresa .figuraEmpresa figcaption {
+    margin: 1% auto 1% auto;
+    width: 90%;
+    padding: 2% 2%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.infoEmpresa p {
+    text-align: justify;
+    text-justify: initial;
+    width: 90%;
+    margin: 0 auto 1.5% auto;
+    padding: 3% 5%;
+    background-color: #fff;
+    border-bottom: 4px solid #31313b;
+}
+
+/*Agredecimento*/
+.agredecimentoIconImg {
+    width: 90%;
+    margin: 0 auto 2% auto;
+    padding: 1.5%;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #31313b;
+}
+
+.agredecimentoIconImg .meAjudaram {
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin: 2% 0;
+    padding: 2%;
+    color: #0d4463;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+}
+
+.agredecimentoIconImg .meAjudaram li {
+    margin: 2% 0;
+}
+
+/*fim*/
+
+/*SAC*/
+
+/*Navegação*/
+.centro{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*fim*/
+
+/*duvidasFrequentes*/
+
+.duvidasFrequentes{
+    display: none;
+    margin-bottom: 1.2%;
+    padding: 1.2% 0;
+}
+
+.duvidasConteiner{
+    width: 90%;
+    margin: 1.2% auto;
+}
+
+.accordion {
+  background-color: #e4e2e2;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 94%;
+  margin: 0.5% 0;    
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #c8c8c8; 
+}
+
+/*.panelConteudo {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}*/
+.panelConteudo{
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/*fim*/
+
+/*Formulario*/
+.contatoFormulario{
+/*    display: none;*/
+    margin-bottom: 1.1%;
+}
+
+.sacFormulario {
+    width: 80%;
+    padding: 2% 2%;
+    margin: 2% auto;
+    background-color: #b4b4b4;
+    border-radius: 3px;
+    color: white;
+}
+
+.sacFormulario .formulario {
+    padding: 2% 2%;
+    margin: 0 auto;
+    width: 70%;
+    background-color: #f6f6f6;
+    color: #504d4d;
+    border: none;
+}
+
+.sacFormulario .formulario input {
+    margin: 1.2% 0;
+    padding: 2px;
+    height: 35px;
+    width: 90%;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #31313b;
+    border-left: 4px solid #31313b;
+}
+
+.sacFormulario .formulario textarea {
+    height: 150px;
+    padding: 2px;
+    /*    max-width: 350px;*/
+    width: 100%;
+    resize: none;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #31313b;
+    border-left: 4px solid #31313b;
+}
+
+.sacFormulario .formulario button {
+    height: 40px;
+    width: 80px;
+    padding: 0.4%;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: #31313b;
+    color: #f6f6f6;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: none;
+    box-shadow: 1px 1px 4px #000;
+}
+
+.sacFormulario .formulario button:hover {
+    cursor: pointer;
+    background-color: #f6f6f6;
+    border: 1px solid #31313b;
+    color: #31313b;
+    box-shadow: none;
+}
+
+/*fim*/
+
+/*sustentabilidade*/
+
+.sustenInfo {
+    width: 90%;
+    margin: 2% auto;
+    padding: 2% 1%;
+    border-bottom: 6px solid #31313b;
+    border-top: 6px solid #31313b;
+}
+
+.sustenInfo figure {
+    margin: 2% 0;
+}
+
+.sustenInfo figure img {
+    max-height: 500px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.sustenInfo figure figcaption {
+    padding: 2% 1.5%;
+    text-align: center;
+    color: #f6f6f6;
+    background-color: #31313b;
+}
+
+.sustenInfo .estrategia {
+    list-style: none;
+}
+
+/*fim*/
+
+/*footer*/
+.rodape {
+    color: #0d4463;
+    background-color: #f6f6f6;
+    border-top: 6px solid #bebcbc;
+/*    margin-top: 1.2%;*/
+    margin-bottom: 0;
+}
+
+.rodape .logoFooter {
+    width: 50%;
+    height: 162px;
+    margin: 0.5% auto;
+    text-align: center;
+    display: block;
+}
+
+.rodape .logoFooter img {
+    max-width: 350px;
+    max-height: 162px;
+    width: 100%;
+    height: 100%;
+}
+
+.rodape .membros {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.rodape .membros span {
+    padding: 1%;
+    font-weight: bold;
+    background-color: #31313b;
+    color: #f6f6f6;
+    border-radius: 2px;
+}
+
+.rodape .membrosLista {
+    list-style: none;
+    display: inline-block;
+    padding: 1%;
+    background-color: #31313b;
+    /*    color: #f6f6f6;*/
+    border-radius: 2px;
+}
+
+.rodape .membrosLista li {
+    display: inline-block;
+    border: 1px solid #fff;
+    text-align: center;
+    height: 30px;
+    width: 80px;
+    margin: 0.8% 0;
+    background-color: #f6f6f6;
+    color: #31313b;
+    border-radius: 2px;
+
+}
+/*fim*/
+
+/*version do sistema*/
+.versao{
+    position: fixed;
+    bottom: 2px;
+    right: 5px;
+    padding: 0.4%;
+    width: 110px;
+    height: 20px;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px #111;
+    background-color: rgba(252, 115, 0, 0.5);
+    visibility: visible;
+}
+.versao b{
+    font-weight: bold;
+}
+
